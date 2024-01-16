@@ -43,7 +43,6 @@ public class TextListener implements MessageListener {
             } else {
                 System.err.println("Message is not a TextMessage");
             }
-            // set up the reply message 
             int start = Integer.parseInt(msg.getText().split(",")[0]);
             int end = Integer.parseInt(msg.getText().split(",")[1]);
             String quantityOfPrime = String.valueOf(getPrimeQuantity(start, end));
